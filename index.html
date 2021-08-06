@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Your Burger</title>
+</head>
+<body>
+    <div class="container cflex between">
+        <header>
+            <h1 id="title_burger">Create Your Burger</h1>
+            <img id="burger_logo" src="img/burger-top.png" alt="burger logo">
+        </header>
+    
+        <main>
+    
+            <input id="name_burger" type="text" placeholder="Name Your Burger">
+    
+            <section id="ingredients">
+                <h2>Ingredients</h2>
+
+                <div class="col">
+                    <label class="row flex middle">
+                        <img src="img/cheese.svg" alt="cheese">
+                        <input type="checkbox" id="cheese" name="cheese" value="">
+                        <label for="cheese">Cheese</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+                    
+                    <label class="row flex middle">
+                        <img src="img/fried-egg.svg" alt="egg">
+                        <input type="checkbox" id="egg" name="egg" value="">
+                        <label for="egg">Egg</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+
+                    <label class="row flex middle">
+                        <img src="img/mustard.svg" alt="mustard">
+                        <input type="checkbox" id="mustard" name="mustard" value="">
+                        <label for="mustard">Mustard</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+                </div>
+                
+                <div class="col">
+                    <label class="row flex middle">
+                        <img src="img/tomato.svg" alt="tomato">
+                        <input type="checkbox" id="tomato" name="tomato" value="">
+                        <label for="tomato">Tomato</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+                    
+                    <label class="row flex middle">
+                        <img src="img/lettuce.svg" alt="lettuce">
+                        <input type="checkbox" id="Lettuce" name="Lettuce" value="">
+                        <label for="Lettuce">Lettuce</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+                    
+                    <label class="row flex middle">
+                        <img src="img/ketchup.svg" alt="ketchup">
+                        <input type="checkbox" id="Ketchup" name="Ketchup" value="">
+                        <label for="Ketchup">Ketchup</label>
+                        <span class="checkmark"></span>
+                        <span class="add">add</span>
+                    </label>
+                </div>
+                    
+            </section><br>
+    
+            <div id="coupon_place">
+                <label for="fname">Discount Coupon</label>
+                <input type="text" id="coupon" name="coupon" placeholder="12354ABCDEF">
+            </div>
+
+            <button class="flex center" id="calculate_burger">calculate</button>
+    
+        </main>
+
+        <section class="flex middle between" id="price_place">
+
+            <span id="your_price">Your Price</span>
+            <span id="price_burger">$ 50</span>
+            
+        </section>
+
+    </div>
+    
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
